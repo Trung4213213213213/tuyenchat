@@ -1,0 +1,368 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    cursor: pointer;
+   
+}
+#header {
+    width: 50%;
+    height: 10px;
+    padding:5px 30px;
+    margin-top:33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+
+#menu .item {
+    margin:0px 25px;
+    max-width: 50px;
+}
+
+#menu .item a {
+    color:rgb(0, 0, 252);
+    text-decoration: none;
+    
+}
+
+#actions {
+    display: flex;
+}
+
+#actions .item {
+    margin-left:22px;
+}
+#banner {
+    width: 100%;
+    background-image :url("https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-italian-and-italian-food-as-well-other-fresh-produce-arranged-on-image_2951233.jpg");
+    height: 463px;
+    margin-top:40px;
+    display: flex;
+    padding:0px 133px;
+    position:relative;
+}
+
+
+#banner  .box-left h2 {
+    font-size:58px;
+    margin-top:75px;
+    color:#2196f3;
+}
+#banner  .box-left h4{
+    font-size:58px;
+    margin-top:0px;
+    color:red;
+}
+#banner .box-left p {
+    color:white;
+}
+
+#banner .box-left button {
+    width: 191px;
+    height: 40px;
+    margin-top:41px;
+    background:#1d1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 20px;
+    
+}
+
+#banner .box-left button:hover {
+    background:orange;
+}
+
+
+#wp-products {
+    padding-top:116px;
+    padding-bottom: 78px;
+    padding-left:134px;
+    padding-right:134px;
+}
+
+#wp-products h2 {
+    text-align: center;
+    margin-bottom: 76px;
+    font-size:32px;
+    color:#626a67;
+}
+
+
+#list-products {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#list-products .item {
+    width: 350px;
+    height: 410px;
+    background:rgb(255, 165, 127);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#list-products .item img {
+    display: block;
+    margin:0px auto;
+    margin-top:17px;
+    max-width: 250px;
+    height: 230px;
+}
+
+#list-products .item .stars {
+
+    display: flex;
+    margin:0px auto;
+    width: 50%;
+}
+
+#list-products .item .name {
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+    margin-top:21px;
+}
+
+#list-products .item .desc {
+    text-align: center;
+    color:#626a67;
+}
+
+#list-products .item .price {
+    text-align: center;
+    color:#f42424;
+    font-weight: bold;
+    margin-top:20px;
+}
+
+
+.list-page {
+    width: 50%;
+    margin:0px auto;
+}
+
+.list-page {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-page .item {
+    margin:0px 15px;
+    width: 37px;
+    height: 37px;
+    background:#362f2f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item a {
+    color:#fff;
+    text-decoration: none;
+}
+
+#comment {
+    width: 1012px;
+    height: 478px;
+    margin:0px auto;
+    margin-top:184px;
+    margin-bottom: 50px;
+}
+
+#comment h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size:32px;
+    color:#626a67;
+}
+
+
+#comment-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    list-style: none;
+    overflow: hidden;
+}
+
+
+#list-comment .item {
+    width: 100%;
+    height: 100%;
+    background:#362f2f;
+    border-radius: 20px;
+    padding-top:50px;
+}
+
+#list-comment .item .avatar {
+    text-align: center;
+    margin-top:13px;
+}
+
+#list-comment .item .stars {
+    display: flex;
+    margin:0px auto;
+    width: 50%;
+    margin-top:32px;
+    justify-content: center;
+    align-items: center;
+}
+
+#list-comment .item .name {
+    text-align: center;
+    font-weight: bold;
+    color:blue;
+}
+
+#list-comment .item .text {
+    padding:20px 50px;
+    color:yellowgreen;
+
+}
+
+#footer {
+    width: 100%;
+    background:rgb(0,0,0,0.79);
+    height: 322px;
+    margin-top:338px;
+    padding:0px 63px;
+    padding-top:57px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .box {
+    width: 250px;
+    color:#fff;
+}
+
+#footer .box .quick-menu {
+    margin-top:40px;
+
+}
+
+
+#footer .box .quick-menu .item{
+    margin-bottom:12px;
+
+}
+#footer .box .quick-menu ,.item a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+#footer .box form input {
+    width: 294px;
+    height: 42px;
+    background:transparent;
+    padding-left:20px;
+    color:#fff;
+    margin-top:30px;
+}
+
+#footer .box form button {
+    background:#362f2f;
+    box-shadow: 5px 5px 4px rgba(0,0,0.25);
+    width: 163px;
+    height: 38px;
+    margin-top:29px;
+    color:#fff;
+}
+*{  
+    padding: 0; 
+    margin: 0;
+}
+ul{
+list-style: none;
+}
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.2;
+}
+#wrapper{
+height: 10vh;
+display: flex;
+justify-content: center;
+}
+nav{
+margin-top: 20px;
+}
+ul#main-menu {
+display: flex;
+}
+ul#main-menu li{
+padding: 0px 20px;
+}
+ul#main-menu a{     
+display: block;
+padding: 15px 0px;
+text-transform: uppercase;
+font-weight: bold;
+text-decoration: none;
+color: black;
+position: relative;
+}
+ul#main-menu a::after{
+content: "";
+height: 5px;
+width: 10px;
+background-color: blue;
+position: absolute;
+bottom: 0px;
+left: 0 ;
+transition: all 0.5s ease-in-out;
+}
+ul#main-menu a:hover::after{
+width: 50%; 
+transform: translate(100%);
+}
+footer {
+    border-top: 5px double rgb(0,0,0,0.79);
+    line-height: 50px;
+    background-color: rgb(0,0,0,0.79);
+    text-align: center;
+    font-variant: small-caps;
+    clear: both;
+    color: #f42424;
+}
+button {
+    appearance: auto;
+    text-rendering: auto;
+    color: white;
+    text-shadow: forestgreen;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: red;
+    
+}
+#main-menu>ul {
+    font-size: large;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    background-color: rgb(0, 195, 255);
+    text-align: center;
+}

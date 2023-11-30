@@ -1,0 +1,37 @@
+::-webkit-progress-inner-element{
+margin: auto;
+padding: 0;
+display: block;
+    -webkit-user-select: none;
+    margin: auto;
+    cursor: zoom-in;
+    background-color: hsl(0, 0%, 90%);
+    transition: background-color 300ms;
+}
+img{
+    width: 981px;
+    aspect-ratio: auto 981/261;
+    height: 261px;
+}
+.container > ul.top-right{
+    Position:absolute;
+    Top:0px;
+    Right:0px;
+    Border-bottom-left-radius: 30px;
+}
+ul.top-right > li{
+    float: right;
+    margin: 0 5px;
+}
+
+ul.top-right > li > a{
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    font-variant: small-caps;
+    padding-left: 25px;
+    color: white;
+}
+    
+
+

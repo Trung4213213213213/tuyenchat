@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng của ĐINH TRUNG </title>
+    
+</head>
+<style>
+    *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+}
+#header {
+    width: 100%;
+    padding:0px 30px;
+    margin-top:33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+
+#menu .item {
+    margin:0px 25px;
+    max-width: 50px;
+}
+
+#menu .item a {
+    color:rgb(0, 0, 252);
+    text-decoration: none;
+    
+}
+
+#actions {
+    display: flex;
+}
+
+#actions .item {
+    margin-left:22px;
+}
+#banner {
+    width: 100%;
+    background-image :url("https://raw.githubusercontent.com/hqteamobi/web_shop_ban_hang/8fd6370a7184716080a98b623163b322de192b42/assets/banner.png");
+    height: 463px;
+    margin-top:40px;
+    display: flex;
+    padding:0px 133px;
+    position:relative;
+}
+
+
+#banner  .box-left h2 {
+    font-size:58px;
+    margin-top:75px;
+    color:#2196f3;
+}
+
+#banner .box-left p {
+    color:#D0D0D0;
+}
+
+#banner .box-left button {
+    width: 191px;
+    height: 40px;
+    margin-top:41px;
+    background:#1d1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition:0.4s;
+}
+
+#banner .box-left button:hover {
+    background:orange;
+}
+
+#banner .box-right {
+    padding-left:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.to-bottom {
+    position:absolute;
+    bottom:-40px;
+    left:50%;
+    transform:translateX(-50%);
+}
+#banner  .box-left h4{
+    font-size:58px;
+    margin-top:0px;
+    color:red;
+}
+
+
+#wp-products {
+    padding-top:116px;
+    padding-bottom: 78px;
+    padding-left:134px;
+    padding-right:134px;
+}
+
+#wp-products h2 {
+    text-align: center;
+    margin-bottom: 76px;
+    font-size:32px;
+    color:#626a67;
+}
+
+
+#list-products {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#list-products .item {
+    width: 380px;
+    height: 414px;
+    background:#352f36;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#list-products .item img {
+    display: block;
+    margin:0px auto;
+    margin-top:17px;
+    max-width: 250px;
+    height: 230px;
+}
+
+#list-products .item .stars {
+
+    display: flex;
+    margin:0px auto;
+    width: 50%;
+}
+
+#list-products .item .name {
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+    margin-top:21px;
+}
+
+#list-products .item .desc {
+    text-align: center;
+    color:#626a67;
+}
+
+#list-products .item .price {
+    text-align: center;
+    color:#f42424;
+    font-weight: bold;
+    margin-top:20px;
+}
+
+
+.list-page {
+    width: 50%;
+    margin:0px auto;
+}
+
+.list-page {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+#saleoff {
+    width:200%;
+    display: flex;
+    height: 322px;
+}
+#saleoff .box-left ,#saleoff .box-right {
+    width: 50%;
+}
+#saleoff .box-left {
+    background:#3e413e;
+    text-align: center;
+    min-height: 322px;
+}
+
+#saleoff .box-left h1 {
+    padding-top:38px;
+}
+#saleoff .box-left span:nth-child(1)
+{
+    color:#fff;
+    font-size:50px;
+}
+
+#saleoff .box-left span:nth-child(2)
+{
+    color:orange;
+    font-size:128px;
+}
+
+
+.list-page .item {
+    margin:0px 15px;
+    width: 37px;
+    height: 37px;
+    background:#362f2f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item a {
+    color:#fff;
+    text-decoration: none;
+}
+
+#comment {
+    width: 1012px;
+    height: 478px;
+    margin:0px auto;
+    margin-top:184px;
+    margin-bottom: 50px;
+}
+
+#comment h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size:32px;
+    color:#626a67;
+}
+
+
+#comment-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#list-comment {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    transition:0.5s;
+}
+
+#list-comment .item {
+    width: 100%;
+    height: 100%;
+    background:#362f2f;
+    border-radius: 20px;
+    padding-top:50px;
+}
+
+#list-comment .item .avatar {
+    text-align: center;
+    margin-top:13px;
+}
+
+#list-comment .item .stars {
+    display: flex;
+    margin:0px auto;
+    width: 50%;
+    margin-top:32px;
+    justify-content: center;
+    align-items: center;
+}
+
+#list-comment .item .name {
+    text-align: center;
+    font-weight: bold;
+    color:blue;
+}
+
+#list-comment .item .text {
+    padding:20px 50px;
+    color:yellowgreen;
+
+}
+
+#footer {
+    width: 100%;
+    background:rgb(0,0,0,0.79);
+    height: 322px;
+    margin-top:338px;
+    padding:0px 63px;
+    padding-top:57px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .box {
+    width: 250px;
+    color:#fff;
+}
+
+#footer .box .quick-menu {
+    margin-top:40px;
+
+}
+
+
+#footer .box .quick-menu .item{
+    margin-bottom:12px;
+
+}
+#footer .box .quick-menu ,.item a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+#footer .box form input {
+    width: 294px;
+    height: 42px;
+    background:transparent;
+    padding-left:20px;
+    color:#fff;
+    margin-top:30px;
+}
+
+#footer .box form button {
+    background:#362f2f;
+    box-shadow: 5px 5px 4px rgba(0,0,0.25);
+    width: 163px;
+    height: 38px;
+    margin-top:29px;
+    color:#fff;
+}
+button {
+    appearance: auto;
+    text-rendering: auto;
+    color: white;
+    text-shadow: forestgreen;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: red;
+    
+}
+</style>
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+               <img src="https://www.vndirect.com.vn/cmsupload/beta/2019/03/logo-header.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="index.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="helo.html">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="blogg.html">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="https://www.facebook.com/dinhhuu.trung.9/">Liên hệ</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                </div>
+                <div class="item">
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="box-left">
+                <h2>
+                    <h2>
+                        <span>Seoul</span>
+                        <br>
+                    </h2>
+                    <h4>
+                        <span>Tokyo</span>
+                    </h4>
+                <p>Chuyên cung cấp các món ăn đến từ Nhật Bản,Hàn Quốc,VIỆT NAM <br> Tất cả các đồ ăn chất lượng cao của toàn thế giới,kết hợp những món truyền thống và quốc tế. </p>
+                <button>Mua ngay</button>
+            </div>
+            
+            </div>
+        </div>
+        <div id="wp-products">
+            <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+            <ul id="list-products">
+                <div class="item">
+                    <img src="https://channel.mediacdn.vn/thumb_w/640/2019/3/8/photo-1-15520438700571233711429.jpg" alt="">
+                    
+                    <div class="name">Nước cam ép Singapore</div>
+                    <div class="desc">Món nước làm từ cam ép từ Singapore </div>
+                    <div class="price"><del>800.000VNĐ<br></del>500.000VNĐ<br><br><button>    
+                        MUA NGAY
+                    </button></div>
+                </div>
+
+                <div class="item">
+                    <img src="https://www.bartender.edu.vn/wp-content/uploads/2017/03/mon-old-fashioned-cocktail.jpg" alt="">
+
+                    <div class="name">Cocktail</div>
+                    <div class="desc">Nước uống được pha đặc biệt</div>
+                    <div class="price"><del>1.800.000VNĐ<br></del>1.000.000VNĐ<br><br><button>    
+                        MUA NGAY
+                    </button></div>
+                </div>
+                <div class="item">
+                    <img src="https://caviarrussia.vn/wp-content/uploads/2021/06/Nh%E1%BB%AFng-chai-r%C6%B0%E1%BB%A3u-%C4%91%E1%BA%AFt-nh%E1%BA%A5t-th%E1%BA%BF-gi%E1%BB%9Bi-hi%E1%BB%87n-nay-1.jpg" alt="">
+
+                    <div class="name">Rượu Caviar </div>
+                    <div class="desc">Là 1 chai rượu "cao cấp"  </div>
+                    <div class="price"><del>178.800.000VNĐ<br></del>79.000.000VNĐ<br><br><button>    
+                        MUA NGAY
+                    </button></div>
+                </div>
+                <div class="item">
+                    <img src="https://mensfolio.vn/wp-content/uploads/2022/10/20221910_MFonline_themacallanthereach81-6.jpg" alt="">
+
+                    <div class="name">Rượu whisky</div>
+                    <div class="desc">Là loại  xuất khẩu từ năm 1982</div>
+                    <div class="price"><del>82.000.000VNĐ<br></del>52.000.000VNĐ<br><br><button>    
+                        MUA NGAY
+                    </button></div>
+                </div>
+
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT-OU45nsV5OI8wlqG06ahyx7QEGOs2FTRZA&usqp=CAU" alt="">
+                   
+                    <div class="name">Rượu Louis XIII</div>
+                    <div class="desc">Là 1 trong 15 loại rượu đắt nhất thế giới</div>
+                    <div class="price"><del>862.800.000VNĐ<br></del>749.000.000VNĐ<br><br><button>    
+                        MUA NGAY
+                    </button></div>
+                </div>
+
+                <div class="item">
+                    <img src="https://cdn.tuoitre.vn/thumb_w/480/2021/1/20/bia-truong-sa-va-hoang-sa-16111448299211737804023.jpg" alt="">
+                    
+                    <div class="name">Bia của VIỆT NAM</div>
+                    <div class="desc">1 loại bia được sản xuất tại Việt Nam</div>
+                    <div class="price">1.000.000.000VNĐ<br><br><button>    
+                        MUA NGAY
+                    </button></div>
+                    
+                </div>
+                
+            </ul>
+            <div class="list-page">
+                <div class="item">
+                    <a href="index.html">1</a>
+            
+                </div>
+                <div class="item">
+                    <a href="banhang2.html">2</a>
+                </div>
+                <div class="item">
+                    <a href="banhang3.html">3</a>
+                </div>
+                <div class="item">
+                    <a href="banhang4.html">4</a>
+                </div>
+            </div>
+        </div>
+        <div id="saleoff">
+            <div class="box-left">
+                <h1>
+                    <span>GIẢM GIÁ LÊN ĐẾN</span>
+                    <span>45%</span>
+                </h1>
+            </div>
+            <div class="box-right"></div>
+        </div>
+        <div id="comment">
+            <h2>CAM KẾT CỦA CHỦ CỬA HÀNG</h2>
+            <div id="comment-body">
+                <div class="prev">
+                    <a href="#">
+                    </a>
+                </div>
+                <ul id="list-comment">
+                    <li class="item">
+                        <div class="avatar">
+                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjnJRMI6tAtxU8oq6m_juB5fVxZXmhJn3faNX9wWfyeWUoTil_">
+
+                        </div>
+                        <div class="name">Đinh Hữu Trung</div>
+
+                        <div class="text">
+                            <p>Mong những khách hàng sẽ dùng bữa ngon miệng tại cửa hàng của chúng tôi.Cửa hàng chúng tôi
+                                mong muốn quý khách có những trải nghiệm tuyệt vời và cửa hàng chúng tôi muốn đưa món ăn dân 
+                                tộc <strong>VIỆT NAM</strong> ra toàn thế giới...
+                            </p>
+                        </div>
+                    </div>
+        </div>
+        
+        <div id="footer">
+            <div class="box">
+                <div class="logo">
+                    <img class="https://www.vndirect.com.vn/cmsupload/beta/2019/03/logo-header.png" alt="">
+                </div>
+                <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+            </div>
+            <div class="box">
+                <h3>NỘI DUNG</h3>
+                <ul class="quick-menu">
+                    <div class="item">
+                        <a href="index.html">Trang chủ</a>
+                    </div>
+                    <div class="item">
+                        <a href="helo.html">Sản phẩm</a>
+                    </div>
+                    <div class="item">
+                        <a href="blogg.html">Blog</a>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.facebook.com/dinhhuu.trung.9/">Liên hệ</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>LIÊN HỆ</h3>
+                <form action="">
+                    <input type="text" placeholder="Địa chỉ email">
+                    <button>Nhận tin</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
